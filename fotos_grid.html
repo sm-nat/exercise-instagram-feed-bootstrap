@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Feed Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!--barra nav-->
+  <nav class="navbar ms-auto bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        create a new post
+      </button>
+
+      <!--gear-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+    </div>
+  </nav>
+
+  <!--iconos para la galeria-->
+  
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+    <a href="index.html"><i class="fa-regular fa-square"></i></a>
+    <a href="fotos_grid.html"><i class="fa-solid fa-table-cells"></i></a>
+    </li>
+    <li class="nav-item">
+    </li>
+  </ul>
+  
+  
+
+
+  <!--- gallery-->
+  <div id="gallery" class="container-fluid">
+
+    <div class="row g-2 mb-2">
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/237/200/300" alt="1photo">
+      </div>
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/238/200/300" alt="2photo">
+      </div>
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/239/200/300" alt="3photo">
+      </div>
+    </div>
+    <div class="row g-2 mb-2">
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/235/200/300" alt="4photo">
+      </div>
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/234/200/300" alt="5photo">
+      </div>
+      <div class="col-4 col-lg-4">
+        <img src="https://picsum.photos/id/233/200/300" alt="6photo">
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Caption
+          </div>
+          <!--icons-->
+          <div class="d-flex">
+            <i class="fa-solid fa-camera d-inline"></i>
+            <i class="fa-solid fa-location-dot d-inline"></i>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
